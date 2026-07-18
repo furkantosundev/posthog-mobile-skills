@@ -17,5 +17,5 @@ jobs:
       - name: Validate Agent Skills packages
         run: |
           for skill in skills/*; do
-            uvx skills-ref validate "$skill"
+            uvx --from skills-ref agentskills validate "$skill"
           done
